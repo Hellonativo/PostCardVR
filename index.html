@@ -14,33 +14,45 @@
 <body>
     <a-scene>
         <a-assets>
-            <img id="sky" src="Assets/sky2.jpg" > 
-            <img id="texture" src="Assets/way.jpg" > 
-            <img id="wall" src="Assets/wall.jpg" alt="">
+            <img id="sky" src="Assets/sky2.jpg">
+            <img id="texture" src="Assets/way.jpg">
+            <img id="wall" src="Assets/wall.jpg" >
         </a-assets>
-        <!-- <a-box id="wall_2" color="grey" width="5.5" height="5" depth="1" static-body="" geometry="" position="0.6 2.5 -0.5"
-         material="src:#wall"></a-box> -->
-         <!-- Pared Derecha -->
-        <a-box id="wall_3" color="#dcdcdc" width="10" height="5" depth="1" position="3.731 2.5 -5"
-            material="src:#wall" rotation="0 90 0" static-body>
+
+        <a-box id="wall_1" color="#A9A9A9" width="5.5" height="5" depth="1" static-body="" geometry=""
+            position="0.6 2.5 -0.5" material="repeat:1 1;src:#wall"></a-box>
+
+        <!-- Pared 1 Derecha -->
+        <a-box id="wall_2" color="#A9A9A9" width="15" height="5" depth="1" position="3.731 2.5 -7.5"
+            material="repeat:1 1;src:#wall" rotation="0 90 0" static-body>
         </a-box>
-        <a-box id="wall_3" color="#dcdcdc" width="10" height="5" depth="1" position="3.731 2.5 -15"
-            material="src:#wall" rotation="0 90 0" static-body>
+        <!-- Pared 1 Izquierda -->
+        <a-box id="wall_3" color="#A9A9A9" width="10" height="5" depth="1" position="-2.5 2.5 -5"
+            material="repeat:1 1;src:#wall" rotation="0 90 0" static-body>
         </a-box>
-        <a-box id="wall_3" color="#dcdcdc" width="10" height="5" depth="1" position="3.731 2.5 -25"
-            material="src:#wall" rotation="0 90 0" static-body>
+        <!-- Pared 2 Derecha -->
+        <a-box id="wall_4" color="#A9A9A9" height="5" depth="1" static-body="" geometry="" position="-8.4 2.5 -14.5"
+            material="repeat:1 1;src:#wall" width="25"></a-box>
+
+        <!-- Pared 2 Izquierda -->
+        <a-box id="wall_5" color="#A9A9A9" height="5" depth="1" static-body="" geometry=""
+            material="repeat:1 1;src:#wall" width="25"
+            position="-14.51 2.5 -9.5">
+
         </a-box>
-        <!-- Pared izquierda -->
-        <a-box id="wall_4" color="#dcdcdc" width="10" height="5" depth="1" position="-2.5 2.5 -5"
-            material="src:#wall" rotation="0 90 0" static-body>
+
+        <!-- Pared 3 derecha -->
+
+        <a-box color="#A9A9A9" height="5" depth="1" static-body="" geometry="" rotation="0 90 0"
+            material="repeat:1 1;src:#wall" id="wall_6" width="15"
+            position="-20.4 2.5 -21.6">
         </a-box>
-        <a-box id="wall_4" color="#dcdcdc" width="10" height="5" depth="1" position="-2.5 2.5 -15"
-            material="src:#wall" rotation="0 90 0" static-body>
+        <!-- Pared 3 Izquierda -->
+        <a-box id="wall_7" color="#A9A9A9" height="5" depth="1"
+            material="repeat:1 1;src:#wall" rotation="0 90 0" static-body=""
+            geometry="" width="25" position="-27.10 2.5 -21.5">
         </a-box>
-        <a-box id="wall_4" color="#dcdcdc" width="10" height="5" depth="1" position="-2.5 2.5 -25"
-            material="src:#wall" rotation="0 90 0" static-body>
-        </a-box>
-       
+
 
         <!-- Floor. -->
         <a-entity id="floor" static-body geometry="depth:200;height:0.1;width:200;"
