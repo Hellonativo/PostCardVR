@@ -18,6 +18,7 @@
             <img id="texture" src="Assets/way.jpg">
             <img id="wall" src="Assets/wall.jpg">
             <img id="logo" src="Assets/logoNativo.png">
+            <img id="arrows" src="Assets/keyboard.png">
             <!-- Images wall Right -->
             <img id="marco" src="Assets/right/marco.png" alt="">
             <img id="r1" src="Assets/right/r1.jpg" alt="">
@@ -307,8 +308,11 @@
         </a-image>
         <a-image color="#A9A9A9" src="#r25" height="3" width="3" position="-20.912 2.5 -25.5" rotation="0 -90 0">
         </a-image>
+        <!-- Arrows -->
+        <a-image src="#arrows" height="0.1" width="0.1" position="0.2 1.2 -0.5" rotation="0 0 0">
+        </a-image>
         <!-- Camera. -->
-        <!-- <a-entity camera look-controls position="0 1.5 -1.2" animation__1="property: position; to: 0 1.5 -11.2; dur: 18000; easing: linear"></a-entity> -->
+        <a-entity camera look-controls wasd-controls position="0.2 1.5 0"></a-entity>
     </a-scene>
 
 </body>
